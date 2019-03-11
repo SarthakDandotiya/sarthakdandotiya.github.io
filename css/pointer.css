@@ -1,0 +1,55 @@
+.pointer {
+	/* position: absolute; */
+	position: fixed;
+	/* top: 0%; */
+	bottom: 0%;
+	left: 0%;
+	transform: translate(-50%, -50%);
+	/* width: 35px;
+	height: 35px; */
+	width: 10px;
+	height: 10px;
+	/* background: rgba(255, 255, 255, 0.15); */
+	background: #5c6aff;
+	border-radius: 50%;
+	pointer-events: none;
+	box-sizing: border-box;
+	/* margin: 10px; */
+	/* border: white solid 3px; */
+	/* transition: 0.05s; */
+
+	z-index: 999999999999999999;
+}
+
+.pointer-b {
+	/* position: absolute; */
+	position: fixed;
+	bottom: 0%;
+	left: 0%;
+	transform: translate(-50%, -50%);
+	width: 35px;
+	height: 35px;
+	background: transparent;
+	border-radius: 50%;
+	border: 1px solid white;
+	pointer-events: none;
+	box-sizing: border-box;
+	transition: 0.1s;
+	opacity: 0.6;
+
+	z-index: 999999999999999999;
+}
+
+.clicker {
+	width: 60px;
+	height: 60px;
+	background: rgba(255, 255, 255, 0.15);
+	border: 1px solid rgba(255, 255, 255, 0.25);
+	/* transition: 0.14s; */
+}
+
+.mouse-down {
+	height: 45px;
+	width: 45px;
+	transition: 0.2s;
+}

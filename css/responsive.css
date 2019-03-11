@@ -1,0 +1,108 @@
+@media only screen and (max-width: 1270px) {
+	/* About */
+	.about-left p {
+		font-size: 2.7em;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	/* Menu */
+	.data ul {
+		flex-direction: column;
+	}
+	/* About */
+	.about-left p {
+		font-size: 2.4em;
+	}
+	.about-right {
+		font-size: 1.3em;
+	}
+	/* Contact */
+	.social {
+		width: 45%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	/* Pointer */
+	.pointer,
+	.pointer-b,
+	.clicker,
+	.mouse-down {
+		display: none !important;
+	}
+	/* Curtains */
+	.plane {
+		width: 100%;
+		margin: 0;
+		/* margin: -10vh 0 0 0; */
+	}
+	/* About */
+	#about {
+		margin-bottom: 7em;
+	}
+	.chevron {
+		display: none;
+	}
+	.about-writing {
+		flex-direction: column;
+		padding-top: 45vh;
+	}
+	.about-left {
+		width: 100%;
+		margin-bottom: 1.5em;
+	}
+	.about-right {
+		width: 100%;
+		flex-direction: row;
+	}
+	/* Academic */
+	.acad-top {
+		width: 100%;
+		flex-direction: column;
+	}
+	.acad-top-left {
+		width: 100%;
+		margin-bottom: 5em;
+	}
+	.acad-top-right {
+		width: 100%;
+	}
+	.acad-bottom {
+		flex-direction: column;
+	}
+	.acad-bottom div {
+		width: 100%;
+	}
+	/* Blog */
+	.blog-text {
+		font-size: 2em;
+		/* width: 80%; */
+	}
+	img {
+		/* display: none; */
+		width: 100%;
+	}
+	/* Contact */
+	.social {
+		width: 60%;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	/* Nav */
+	.nav-brand {
+		font-size: 18px;
+	}
+	span.one {
+		width: 25px;
+	}
+	span.two {
+		width: 25px;
+		margin-top: 12px;
+	}
+	/* Contact */
+	.social {
+		width: 90%;
+	}
+}

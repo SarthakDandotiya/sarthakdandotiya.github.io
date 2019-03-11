@@ -1,0 +1,20 @@
+@font-face {
+	font-family: "Circular Std";
+	font-style: normal;
+	font-weight: 400;
+	src: url("CircularStd-Book.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Circular Std";
+	font-style: normal;
+	font-weight: 500;
+	src: url("CircularStd-Medium.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Circular Std";
+	font-style: normal;
+	font-weight: 700;
+	src: url("CircularStd-Bold.woff") format("woff");
+}

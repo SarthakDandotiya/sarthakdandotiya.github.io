@@ -1,0 +1,29 @@
+#shader {
+	/* make the body fits our viewport */
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	margin: 0;
+
+	/* hide scrollbars */
+	overflow: hidden;
+}
+
+#canvas {
+	height: 85vh;
+	min-height: 70vh;
+	max-height: 90vh;
+	width: 100%;
+	background: transparent;
+	position: absolute;
+	z-index: -1000000;
+}
+.plane {
+	width: 45%;
+	max-width: 1400px;
+	margin: 5vh auto;
+}
+
+.plane img {
+	display: none;
+}
