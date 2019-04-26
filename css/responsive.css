@@ -90,6 +90,10 @@
 }
 
 @media only screen and (max-width: 425px) {
+	/* Preloader */
+	#preloader {
+		background-size: 15%;
+	}
 	/* Nav */
 	.nav-brand {
 		font-size: 18px;

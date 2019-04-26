@@ -52,7 +52,8 @@ h4 {
 
 /* Preloader */
 #preloader {
-	background: url('../img/') no-repeat scroll center center #202020;
+	background: url('../img/loader.gif') no-repeat scroll center center #202020;
+	background-size: 4%;
 	position: fixed;
 	z-index: 10000;
 	height: 100%;
