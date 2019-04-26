@@ -1,6 +1,6 @@
 * {
 	/* RESET & Font */
-	font-family: "Circular Std";
+	font-family: 'Circular Std';
 	font-weight: 400;
 	margin: 0;
 	padding: 0;
@@ -32,7 +32,7 @@ section {
 }
 
 :target::before {
-	content: "";
+	content: '';
 	display: block;
 	height: 90px; /* fixed header height*/
 	margin: -90px 0 0; /* negative fixed header height */
@@ -46,8 +46,17 @@ h4 {
 }
 
 .hero-text {
-	font-family: "Circular Std";
+	font-family: 'Circular Std';
 	font-weight: 500;
+}
+
+/* Preloader */
+#preloader {
+	background: url('../img/') no-repeat scroll center center #202020;
+	position: fixed;
+	z-index: 10000;
+	height: 100%;
+	width: 100%;
 }
 
 /* About */

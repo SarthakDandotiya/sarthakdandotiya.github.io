@@ -16,6 +16,11 @@
 			href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css"
 		/> -->
 
+		<meta name="theme-color" content="#000000" />
+		<meta name="msapplication-navbutton-color" content="#000000" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="#000000" />
+		<link rel="shortcut icon" href="./img/S.png" type="image/x-icon" />
+
 		<link rel="stylesheet" href="fonts/font.css" />
 		<link rel="stylesheet" href="./css/pointer.css" />
 		<link rel="stylesheet" href="./css/main.css" />
@@ -24,6 +29,13 @@
 		<title>Sarthak Dandotiya</title>
 	</head>
 	<body>
+		<!-- Preloader -->
+		<div id="preloader"></div>
+		<script>
+			$(window).on('load', function() {
+				$('#preloader').fadeOut(400);
+			});
+		</script>
 		<div class="pointer"></div>
 		<div class="pointer-b"></div>
 		<script src="./scripts/pointer.js"></script>
@@ -300,30 +312,30 @@
 					x: 0,
 					y: 0
 				};
-				var webGLCurtain = new Curtains("canvas");
+				var webGLCurtain = new Curtains('canvas');
 
 				// get our plane element
-				var planeElement = document.getElementsByClassName("plane")[0];
+				var planeElement = document.getElementsByClassName('plane')[0];
 
 				var params = {
-					vertexShaderID: "plane-vs",
-					fragmentShaderID: "plane-fs",
+					vertexShaderID: 'plane-vs',
+					fragmentShaderID: 'plane-fs',
 					widthSegments: 40,
 					heightSegments: 40,
 					uniforms: {
 						time: {
-							name: "uTime",
-							type: "1f",
+							name: 'uTime',
+							type: '1f',
 							value: 1
 						},
 						mousePosition: {
-							name: "uMousePosition",
-							type: "2f",
+							name: 'uMousePosition',
+							type: '2f',
 							value: [mousePosition.x, mousePosition.y]
 						},
 						mouseStrength: {
-							name: "uMouseStrength",
-							type: "1f",
+							name: 'uMouseStrength',
+							type: '1f',
 							value: 0
 						}
 					}
@@ -335,13 +347,13 @@
 					.onReady(function() {
 						plane.setPerspective(35);
 
-						document.body.addEventListener("mousemove", function(
+						document.body.addEventListener('mousemove', function(
 							e
 						) {
 							handleMovement(e, plane);
 						});
 
-						document.body.addEventListener("touchmove", function(
+						document.body.addEventListener('touchmove', function(
 							e
 						) {
 							handleMovement(e, plane);
