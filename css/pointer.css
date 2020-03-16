@@ -27,29 +27,31 @@
 	bottom: 0%;
 	left: 0%;
 	transform: translate(-50%, -50%);
-	width: 35px;
-	height: 35px;
+	width: 40px;
+	height: 40px;
 	background: transparent;
 	border-radius: 50%;
 	border: 1px solid white;
 	pointer-events: none;
 	box-sizing: border-box;
 	/* transition: 0.1s; */
-	opacity: 0.6;
-
+	/* opacity: 0.6; */
+	mix-blend-mode: difference;
 	z-index: 999999999999999999;
 }
 
 .clicker {
-	width: 60px;
-	height: 60px;
-	background: rgba(255, 255, 255, 0.15);
-	border: 1px solid rgba(255, 255, 255, 0.25);
+	/* width: 60px;
+	height: 60px; */
+	/* background: rgba(255, 255, 255, 0.15);
+	border: 1px solid rgba(255, 255, 255, 0.25); */
+	filter: invert(0);
+	mix-blend-mode: difference;
 	/* transition: 0.14s; */
 }
 
 .mouse-down {
 	height: 45px;
 	width: 45px;
-	transition: 0.2s;
+	/* transition: 0.1s; */
 }

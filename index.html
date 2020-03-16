@@ -1,233 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-		<script
-			defer
-			src="https://use.fontawesome.com/releases/v5.6.3/js/all.js"
-		></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-		<!-- <link
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<!-- <link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css"
 		/> -->
 
-		<meta name="theme-color" content="#202020" />
-		<meta name="msapplication-navbutton-color" content="#202020" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="#202020" />
-		<link rel="shortcut icon" href="./img/S.png" type="image/x-icon" />
+	<meta name="theme-color" content="#202020" />
+	<meta name="msapplication-navbutton-color" content="#202020" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="#202020" />
+	<link rel="shortcut icon" href="./img/S.png" type="image/x-icon" />
 
-		<link rel="stylesheet" href="fonts/font.css" />
-		<link rel="stylesheet" href="./css/pointer.css" />
-		<link rel="stylesheet" href="./css/main.css" />
-		<link rel="stylesheet" href="./css/curtains.css" />
-		<link rel="stylesheet" href="./css/responsive.css" />
-		<title>Sarthak Dandotiya</title>
-	</head>
-	<body>
-		<!-- Preloader -->
-		<div id="preloader"></div>
-		<script>
-			$(window).on('load', function() {
-				setTimeout(3000);
-				$('#preloader').fadeOut(400);
-			});
-		</script>
-		<div class="pointer"></div>
-		<div class="pointer-b"></div>
-		<script src="./scripts/pointer.js"></script>
-		<!-- Navigation -->
-		<div class="nav-container">
-			<div class="nav-brand">
-				<p>
-					Sarthak
-					<span class="hero-text" style="font-weight:700"
-						>Dandotiya</span
-					>
+	<link rel="stylesheet" href="fonts/font.css" />
+	<link rel="stylesheet" href="./css/pointer.css" />
+	<link rel="stylesheet" href="./css/main.css" />
+	<link rel="stylesheet" href="./css/curtains.css" />
+	<link rel="stylesheet" href="./css/responsive.css" />
+	<title>Sarthak Dandotiya</title>
+</head>
+
+<body>
+	<!-- Preloader -->
+	<div id="preloader"></div>
+	<script>
+		$(window).on('load', function () {
+			setTimeout(3000);
+			$('#preloader').fadeOut(400);
+		});
+	</script>
+	<div class="pointer"></div>
+	<div class="pointer-b"></div>
+	<script src="./scripts/pointer.js"></script>
+	<!-- Navigation -->
+	<div class="nav-container">
+		<div class="nav-brand">
+			<p>
+				Sarthak
+				<span class="hero-text" style="font-weight:700">Dandotiya</span>
+			</p>
+		</div>
+		<div class="toggle-btn clickable" onclick="lockScroll()">
+			<span class="one"></span> <span class="two"></span>
+		</div>
+	</div>
+	<!-- Scroll Down Chevron -->
+	<div class="chevron">
+		<img src="./img/down-chevron.svg" alt="scroll-down" />
+	</div>
+	<!-- Nav/Menu -->
+	<div class="menu">
+		<div class="data">
+			<ul>
+				<li>
+					<a href="#about" class="clickable" onclick="lockScroll()">About</a>
+				</li>
+				<li>
+					<a href="#academic" class="clickable" onclick="lockScroll()">Academics</a>
+				</li>
+				<li>
+					<a href="#blog" style="color:rgba(255, 255, 255, 0.3)" class="clickable"
+						onclick="lockScroll()">Blog</a>
+				</li>
+				<li>
+					<a href="#contact" class="clickable" onclick="lockScroll()">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- About -->
+	<section id="about">
+		<div class="pos">
+			<div id="canvas">
+				<div class="plane">
+					<img src="img/portrait.png" alt="Sarthak's Portrait" />
+				</div>
+			</div>
+		</div>
+		<div class="about-writing">
+			<div class="about-left">
+				<h4>About Me</h4>
+				<p class="about-me">
+					I'm Sarthak Dandotiya,<br />a Web Developer and UI/UX
+					Designer.
 				</p>
 			</div>
-			<div class="toggle-btn clickable" onclick="lockScroll()">
-				<span class="one"></span> <span class="two"></span>
+			<div class="about-right">
+				I'm an enthusiastic and energetic college student with a
+				sincere and genuine willingness to learn and zeal to take on
+				new challenges. <br /><br />
+				I aim to create modern and fresh websites infusing them with
+				clever design and visual cues to create bispoke experiences.
 			</div>
 		</div>
-		<!-- Scroll Down Chevron -->
-		<div class="chevron">
-			<img src="./img/down-chevron.svg" alt="scroll-down" />
-		</div>
-		<!-- Nav/Menu -->
-		<div class="menu">
-			<div class="data">
-				<ul>
-					<li>
-						<a
-							href="#about"
-							class="clickable"
-							onclick="lockScroll()"
-							>About</a
-						>
-					</li>
-					<li>
-						<a
-							href="#academic"
-							class="clickable"
-							onclick="lockScroll()"
-							>Academics</a
-						>
-					</li>
-					<li>
-						<a
-							href="#blog"
-							style="color:rgba(255, 255, 255, 0.3)"
-							class="clickable"
-							onclick="lockScroll()"
-							>Blog</a
-						>
-					</li>
-					<li>
-						<a
-							href="#contact"
-							class="clickable"
-							onclick="lockScroll()"
-							>Contact</a
-						>
-					</li>
-				</ul>
-			</div>
-		</div>
-
-		<!-- About -->
-		<section id="about">
-			<div class="pos">
-				<div id="canvas">
-					<div class="plane">
-						<img src="img/portrait.png" alt="Sarthak's Portrait" />
-					</div>
-				</div>
-			</div>
-			<div class="about-writing">
-				<div class="about-left">
-					<h4>About Me</h4>
-					<p class="about-me">
-						I'm Sarthak Dandotiya,<br />a Web Developer and UI/UX
-						Designer.
-					</p>
-				</div>
-				<div class="about-right">
-					I'm an enthusiastic and energetic college student with a
-					sincere and genuine willingness to learn and zeal to take on
-					new challenges. <br /><br />
-					I aim to create modern and fresh websites infusing them with
-					clever design and visual cues to create bispoke experiences.
-				</div>
-			</div>
-			<!-- <div class="scroll-downs">
+		<!-- <div class="scroll-downs">
 				<div class="mousey"><div class="scroller"></div></div>
 			</div> -->
-		</section>
+	</section>
 
-		<!-- Academic -->
-		<section id="academic">
-			<div class="acad-top">
-				<div class="acad-top-left">
-					<h4>Education</h4>
-					<p>
-						I'm currenty in my Second year pursuing an Undergrad in
-						Computer Science Engineering at Vellore Institue of
-						Technology, Vellore. <br /><br />
+	<!-- Academic -->
+	<section id="academic">
+		<div class="acad-top">
+			<div class="acad-top-left">
+				<h4>Education</h4>
+				<p>
+					I'm currenty in my Third year pursuing an Undergrad in
+					Computer Science Engineering at Vellore Institue of
+					Technology, Vellore. <br /><br />
 
-						I completed my schooling from The Hyderabad Public
-						School, Begumpet in India.
-					</p>
+					I completed my schooling from The Hyderabad Public
+					School, Begumpet in India.
+				</p>
+			</div>
+			<div class="acad-top-right">
+				<h4>Roles</h4>
+				<p>
+					I've been a member of various Chapters and Communities as
+					well. <br /><br />
+
+					UI/UX Lead at ACM VIT <br />
+					Core Member at IEEECS VIT <br />
+					Member of Facebook Developer Circle, Vellore
+				</p>
+			</div>
+		</div>
+		<div class="acad-bottom">
+			<h4>Capabilities</h4>
+			<div>
+				<p>
+					<span class="hero-text">Web Development:</span> <br />
+
+					Developing responsive friendly websites with a fresh and
+					clean design which are easily navigable, allowing users
+					to have an improved browsing experience. <br /><br />
+
+					I tend to do more of client side development but I have
+					decent experience with server side as well.
+				</p>
+			</div>
+			<div>
+				<p>
+					<span class="hero-text">UI/UX Design:</span> <br />
+
+					User-Scenario, Usability, Wireframing and Prototyping
+					all which lead to outstanding projects for a visual
+					experience. <br /><br />
+
+					Using a fair amount of graphic design as Illustrations.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Blog -->
+	<section id="blog">
+		<div class="pos">
+			<p class="blog-text">Coming Soon...</p>
+			<img src="./img/Blog.svg" alt="blog" class="blog-img" />
+		</div>
+	</section>
+
+	<!-- Contact -->
+	<section id="contact">
+		<div class="mail">
+			<h4>Feel free to contact me at:</h4>
+			<p>sarthak.dandotiya23@gmail.com</p>
+			<a href="mailto:sarthak.dandotiya23@gmail.com">
+				<div class="mail-btn clickable">
+					<p>Send Mail</p>
+					<!-- <i class="far fa-envelope fa-lg"></i> -->
 				</div>
-				<div class="acad-top-right">
-					<h4>Roles</h4>
-					<p>
-						I'm a member of various Chapters and Communities as
-						well. <br /><br />
+			</a>
+		</div>
+		<!--  -->
+		<div class="social">
+			<a class="clickable" href="https://github.com/SarthakDandotiya"><i class="fab fa-github fa-3x"></i></a>
+			<a class="clickable" href="https://www.linkedin.com/in/sarthak-dandotiya-a41965157/"><i
+					class="fab fa-linkedin fa-3x"></i></a>
+			<a class="clickable" href="https://twitter.com/iamsarthakd"><i class="fab fa-twitter fa-3x"></i></a>
+		</div>
+	</section>
 
-						UI/UX Lead at ACM VIT <br />
-						<!-- Core Member at IEEECS VIT <br /> -->
-						Member of Facebook Developer Circle, Vellore
-					</p>
-				</div>
-			</div>
-			<div class="acad-bottom">
-				<h4>Capabilities</h4>
-				<div>
-					<p>
-						<span class="hero-text">Web Development:</span> <br />
+	<section style="text-align:center; margin: 2%;">
+		<p>&#169; Sarthak Dandotiya 2019. All Rights Reserved</p>
+	</section>
 
-						Developing responsive friendly websites with a fresh and
-						clean design which are easily navigable, allowing users
-						to have an improved browsing experience. <br /><br />
-
-						I tend to do more of client side development but I have
-						decent experience with server side as well.
-					</p>
-				</div>
-				<div>
-					<p>
-						<span class="hero-text">UI/UX Design:</span> <br />
-
-						User-Scenario, Usability, Wireframing and Prototyping
-						all which lead to outstanding projects for a visual
-						experience. <br /><br />
-
-						Using a fair amount of graphic design as Illustrations.
-					</p>
-				</div>
-			</div>
-		</section>
-
-		<!-- Blog -->
-		<section id="blog">
-			<div class="pos">
-				<p class="blog-text">Coming Soon...</p>
-				<img src="./img/Blog.svg" alt="blog" class="blog-img" />
-			</div>
-		</section>
-
-		<!-- Contact -->
-		<section id="contact">
-			<div class="mail">
-				<h4>Feel free to contact me at:</h4>
-				<p>sarthak.dandotiya23@gmail.com</p>
-				<a href="mailto:sarthak.dandotiya23@gmail.com">
-					<div class="mail-btn clickable">
-						<p>Send Mail</p>
-						<!-- <i class="far fa-envelope fa-lg"></i> -->
-					</div>
-				</a>
-			</div>
-			<!--  -->
-			<div class="social">
-				<a class="clickable" href="https://github.com/SarthakDandotiya"
-					><i class="fab fa-github fa-3x"></i
-				></a>
-				<a
-					class="clickable"
-					href="https://www.linkedin.com/in/sarthak-dandotiya-a41965157/"
-					><i class="fab fa-linkedin fa-3x"></i
-				></a>
-				<a class="clickable" href="https://twitter.com/iamsarthakd"
-					><i class="fab fa-twitter fa-3x"></i
-				></a>
-			</div>
-		</section>
-
-		<section style="text-align:center; margin: 2%;">
-			<p>&#169; Sarthak Dandotiya 2019. All Rights Reserved</p>
-		</section>
-
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-		<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
-		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script> -->
-		<script src="./scripts/curtains.min.js"></script>
-		<script id="plane-vs" type="x-shader/x-vertex">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script> -->
+	<script src="./scripts/curtains.min.js"></script>
+	<script id="plane-vs" type="x-shader/x-vertex">
 			#ifdef GL_ES
 			precision mediump float;
 			#endif
@@ -277,7 +247,7 @@
 				vVertexPosition = vertexPosition;
 			}
 		</script>
-		<script id="plane-fs" type="x-shader/x-fragment">
+	<script id="plane-fs" type="x-shader/x-fragment">
 			#ifdef GL_ES
 			precision mediump float;
 			#endif
@@ -307,98 +277,99 @@
 			  gl_FragColor = finalColor;
 			}
 		</script>
-		<script>
-			window.onload = function() {
-				var mousePosition = {
-					x: 0,
-					y: 0
-				};
-				var webGLCurtain = new Curtains('canvas');
+	<script>
+		window.onload = function () {
+			var mousePosition = {
+				x: 0,
+				y: 0
+			};
+			var webGLCurtain = new Curtains('canvas');
 
-				// get our plane element
-				var planeElement = document.getElementsByClassName('plane')[0];
+			// get our plane element
+			var planeElement = document.getElementsByClassName('plane')[0];
 
-				var params = {
-					vertexShaderID: 'plane-vs',
-					fragmentShaderID: 'plane-fs',
-					widthSegments: 40,
-					heightSegments: 40,
-					uniforms: {
-						time: {
-							name: 'uTime',
-							type: '1f',
-							value: 1
-						},
-						mousePosition: {
-							name: 'uMousePosition',
-							type: '2f',
-							value: [mousePosition.x, mousePosition.y]
-						},
-						mouseStrength: {
-							name: 'uMouseStrength',
-							type: '1f',
-							value: 0
-						}
+			var params = {
+				vertexShaderID: 'plane-vs',
+				fragmentShaderID: 'plane-fs',
+				widthSegments: 40,
+				heightSegments: 40,
+				uniforms: {
+					time: {
+						name: 'uTime',
+						type: '1f',
+						value: 1
+					},
+					mousePosition: {
+						name: 'uMousePosition',
+						type: '2f',
+						value: [mousePosition.x, mousePosition.y]
+					},
+					mouseStrength: {
+						name: 'uMouseStrength',
+						type: '1f',
+						value: 0
 					}
-				};
-
-				var plane = webGLCurtain.addPlane(planeElement, params);
-
-				plane
-					.onReady(function() {
-						plane.setPerspective(35);
-
-						document.body.addEventListener('mousemove', function(
-							e
-						) {
-							handleMovement(e, plane);
-						});
-
-						document.body.addEventListener('touchmove', function(
-							e
-						) {
-							handleMovement(e, plane);
-						});
-					})
-					.onRender(function() {
-						plane.uniforms.time.value += 0.5;
-
-						plane.uniforms.mouseStrength.value = Math.max(
-							0,
-							plane.uniforms.mouseStrength.value - 0.0195
-						);
-					});
-
-				function handleMovement(e, plane) {
-					if (e.targetTouches) {
-						mousePosition.x = e.targetTouches[0].clientX;
-						mousePosition.y = e.targetTouches[0].clientY;
-					} else {
-						mousePosition.x = e.clientX;
-						mousePosition.y = e.clientY;
-					}
-
-					var mouseCoords = plane.mouseToPlaneCoords(
-						mousePosition.x,
-						mousePosition.y
-					);
-
-					plane.uniforms.mousePosition.value = [
-						mouseCoords.x,
-						mouseCoords.y
-					];
-
-					plane.uniforms.mouseStrength.value = 1.0;
 				}
 			};
-		</script>
-		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+
+			var plane = webGLCurtain.addPlane(planeElement, params);
+
+			plane
+				.onReady(function () {
+					plane.setPerspective(35);
+
+					document.body.addEventListener('mousemove', function (
+						e
+					) {
+						handleMovement(e, plane);
+					});
+
+					document.body.addEventListener('touchmove', function (
+						e
+					) {
+						handleMovement(e, plane);
+					});
+				})
+				.onRender(function () {
+					plane.uniforms.time.value += 0.5;
+
+					plane.uniforms.mouseStrength.value = Math.max(
+						0,
+						plane.uniforms.mouseStrength.value - 0.0195
+					);
+				});
+
+			function handleMovement(e, plane) {
+				if (e.targetTouches) {
+					mousePosition.x = e.targetTouches[0].clientX;
+					mousePosition.y = e.targetTouches[0].clientY;
+				} else {
+					mousePosition.x = e.clientX;
+					mousePosition.y = e.clientY;
+				}
+
+				var mouseCoords = plane.mouseToPlaneCoords(
+					mousePosition.x,
+					mousePosition.y
+				);
+
+				plane.uniforms.mousePosition.value = [
+					mouseCoords.x,
+					mouseCoords.y
+				];
+
+				plane.uniforms.mouseStrength.value = 1.0;
+			}
+		};
+	</script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
 		<script>
 			var s = skrollr.init({
 				smoothScrolling: true,
 				smoothScrollingDuration: 1000
 			});
 		</script> -->
-		<script src="./scripts/main.js"></script>
-	</body>
+	<script src="./scripts/main.js"></script>
+</body>
+
 </html>
